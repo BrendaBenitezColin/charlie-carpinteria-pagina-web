@@ -93,7 +93,7 @@ height:auto;
     gap: 32px;
 }
 nav a:hover {
-    background-color:#A67B5B; /* cuando pasas el mouse */
+    background-color:#D9C4B1; /* cuando pasas el mouse */
     color: #ffffff;
 }
 nav ul li a{
@@ -111,6 +111,10 @@ nav ul li a{
     align-items: center;          /* centra el texto vertical */
     width: 6rem;   /* ancho fijo */
     height: 2rem; /* alto fijo */
+}
+.botonActivo{
+    color:#FFFFFF;
+    background-color: #A67B5B;
 }
 /* Acerca de nosotros en el home------------------------------------------------------------------------ */
 .bannerDelHome{
@@ -156,7 +160,7 @@ nav ul li a{
     flex-direction: column;
     padding: 2.5rem 2rem ;
     gap: 2rem;
-}
+} 
 .serviciosDestacados h2{
     display:flex;
     background-color: #D9C4B1;
@@ -168,9 +172,33 @@ nav ul li a{
 .contenedorServiciosDestacados{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:space-between;
 }
-.cardServiciosDestacados{
+.serviciosDestacados article {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#000000; /* para que el texto resalte */
     display: flex;
-    
+    justify-content: center;
+    align-items:flex-end;
+    text-align:center;
+    border-radius: 8px; /* opcional */
+    width: 30%;
+    aspect-ratio: 397 / 377;
+}
+.serviciosDestacado1{
+    background-image: url(../assets/img/serv_dest_1.png);
+}
+.serviciosDestacado2{
+    background-image: url(../assets/img/serv_dest_2.png);
+}
+.serviciosDestacado3{
+    background-image: url(../assets/img/serv_des_3.png);
+}
+.serviciosDestacados article p{
+    padding: 16px;
+    background-color: #D9C4B1;
+    margin: 1rem;
+    border-radius: 8px;
 }
