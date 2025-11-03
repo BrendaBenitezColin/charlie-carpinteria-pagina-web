@@ -21,34 +21,36 @@ font-family: "Playfair Display", serif;
 
 /* Configuracion de fuentes ----------------------------------*/
 h1, h2 {
-    font-family:"Playfair Display", serif; ;
+    font-family:"Playfair Display", serif;
 }
 h1 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height:33px ;
 }
 h2{
-    font-size: 26px;
-    line-height:40px ;
+    font-size: 32px;
+    line-height:42px ;
 }
 h3, p{
     font-family: "Lato", sans-serif;
 }
 h3{
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
 }
 p{
     font-size: 18px;
     line-height: 25px;
 }
 .pSmall{
-    font-size: 16;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* Estilo de header---------------------------------------------------------------------------- */
 .hero {
     position: relative;
-    background-image: url(../assets/img/Header.png);
+    background-image: url(../assets/img/background_hero.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;   /* ocupa todo el contenedor sin deformarse */
@@ -62,13 +64,16 @@ p{
     width: auto;              /* mantiene proporción */
     margin-left: 2rem;
 }
+.hero h1{
+    font-size: 32px;
+}
 .hero div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: 115px;
+    /* width: 800px;
+    height: 115px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,10 +85,44 @@ p{
 .hero div h3 {
     margin: 20px 0 0 0;  /* 20px debajo de H1 */
 }
+/* Hero con bootstrap */
+.estilosBootstrap .hero {
+    background-image: url(../assets/img/background_hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 11.75rem;
+    color: #ffffff;
+    overflow: hidden; 
+}
+
+/* margen izquierdo del logo */
+.estilosBootstrap .logo-hero {
+    margin-left: 32px;
+    width: auto;
+    height: auto;
+    max-height: 100px; 
+}
+
+.estilosBootstrap .hero .row {
+    height: 100%;
+    align-items: center;
+}
+
+/* tipografía */
+.estilosBootstrap .hero h2{
+    font-family:"Playfair Display", serif;
+    font-size: 32px;
+    line-height:42px ;
+
+}
+.estilosBootstrap .hero h3 {
+    font-family: "Lato", sans-serif;
+}
 
 /* Estilos de la barra de navegación------------------------------------------------------ */
 nav ul{
-height:auto;
+    height:auto;
     list-style: none;
     background-color:#F9F6F2;
     display: flex;
@@ -93,8 +132,9 @@ height:auto;
     gap: 32px;
 }
 nav a:hover {
-    background-color:#D9C4B1; /* cuando pasas el mouse */
+    background-color:#A67B5B; /* cuando pasas el mouse */
     color: #ffffff;
+    transform:scale(1.1) ;
 }
 nav ul li a{
     text-decoration: none;
@@ -114,11 +154,11 @@ nav ul li a{
 }
 .botonActivo{
     color:#FFFFFF;
-    background-color: #A67B5B;
+    background-color: #4B352A;
 }
 /* Acerca de nosotros en el home------------------------------------------------------------------------ */
 .bannerDelHome{
-    background-image: url(../assets/img/backgroundDelHome.png);
+    background-image: url(../assets/img/background_banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,12 +167,18 @@ nav ul li a{
     justify-content: space-around;
     padding: 2rem;
     align-items: center;
+    gap: 1.5rem;
+}
+.bannerDelHome img{
+    max-width: 100%; /* es para que no crezca más que su contenedor */
+    height: auto ; /* se vaa a mantener la proporcion de ancho y alto */
 }
 .textoBanner{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    max-width: 100%;
 
 }
 .textoBanner li{
@@ -140,7 +186,8 @@ nav ul li a{
     line-height: 32px;
 }
 .botonSolicitarPresupuesto{
-    width: 22.375rem;
+    width: 80%;
+    max-width: 22.375rem;
     padding: .625rem;
     background-color: #4B352A;
     color: #ffffff;
@@ -149,10 +196,13 @@ nav ul li a{
     line-height: 25px;
     cursor: pointer;
     border:none;
+    margin: 2rem;
 }
 .botonSolicitarPresupuesto:hover {
-    background-color:#A67B5B; /* cuando pasas el mouse */
+    background-color: #A67B5B; /* cuando pasas el mouse */
     color: #ffffff;
+    border:#6E6969 1px solid;
+    transform:scale(1.1) ;
 }
 /* Servicios destacados---------------------------------------------------------------------------- */
 .serviciosDestacados{
@@ -160,6 +210,7 @@ nav ul li a{
     flex-direction: column;
     padding: 2.5rem 2rem ;
     gap: 2rem;
+    background-color: #F9F6F2;
 } 
 .serviciosDestacados h2{
     display:flex;
@@ -167,25 +218,29 @@ nav ul li a{
     justify-content: center;
     border-radius: .5rem;
     padding: .5rem;
+    font-size: 24px;
+    line-height:33px ;
 
 }
 .contenedorServiciosDestacados{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
+    align-items: center;
+    gap: 1rem;
 }
 .serviciosDestacados article {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    color:#000000; /* para que el texto resalte */
+    color:#000000;
     display: flex;
     justify-content: center;
     align-items:flex-end;
     text-align:center;
-    border-radius: 8px; /* opcional */
-    width: 30%;
-    aspect-ratio: 397 / 377;
+    border-radius: 8px; 
+    width: 23.5625rem;
+    height: 23.5625rem;
 }
 .serviciosDestacado1{
     background-image: url(../assets/img/serv_dest_1.png);
@@ -199,6 +254,103 @@ nav ul li a{
 .serviciosDestacados article p{
     padding: 16px;
     background-color: #D9C4B1;
-    margin: 1rem;
+    margin: 2rem;
     border-radius: 8px;
 }
+/* Ultimos proyectos__________________________________________________________________________________________ */
+.ultimosProyectos{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/ultimos_proyectos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+    gap: 3rem;
+}
+.ultimosProyectos h2{
+    font-size: 24px;
+    line-height:33px ;
+}
+.contenerdorUltimosProyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 4rem;
+}
+.contenerdorUltimosProyectos div{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer{
+    background-color:#A67B5B ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    color: #ffffff;
+    gap: 1.5rem;
+}
+footer img{
+    height: auto;
+}
+/* SERVICIOS______________________________________________________________________________ */
+.servicios{
+    display:flex;
+    flex-direction: column;
+    padding: 0rem 2rem ;
+    gap: 2rem;
+    background-color:#F9F6F2 ;
+}
+.servicios h1{
+    background-color:#D9C4B1 ;
+    justify-content: center;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-align: center;
+    color:#000000;
+}
+.subtitulo{
+    text-align: center;
+}
+.contenedorServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    color: #ffffff;
+}
+.contenedorServicios article{
+    display: flex;
+    justify-content: space-between;
+    width:min(100%, 71.375rem);
+    height: 19.3125rem;
+    background-color: #4B352A;
+    border-radius: .5rem;
+    align-items: center;
+}
+.contenedorServicios article div{
+    display: flex;
+    padding: 0px 4rem; /* separación del texto respecto a los bordes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+.contenedorServicios article img {
+     width: 45%;         /* o el porcentaje que quieras que ocupe */
+    height: 100%;       /* siempre llena la altura */
+    object-fit: cover;  /* se recorta, no se deforma */
+    flex-shrink: 0;     /* evita que se aplaste demasiado */
+    display: block;
+    border-radius: .5rem;
+}
+
