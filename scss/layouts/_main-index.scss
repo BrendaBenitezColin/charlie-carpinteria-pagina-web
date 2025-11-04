@@ -1,0 +1,85 @@
+.serviciosDestacados{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem ;
+    gap: 2rem;
+    background-color:map-get($colors, fondo );
+
+    h2{
+        display:flex;
+        background-color: map-get($colors, terciario);
+        justify-content: center;
+        border-radius: .5rem;
+        padding: .5rem;
+        font-size: 24px;
+        line-height:33px ;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        gap: 2rem;
+        article{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color:map-get($colors, negro);
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+            text-align:center;
+            border-radius: 8px; 
+            width: 18rem;
+            height: 18rem;
+            p{
+                padding: 16px;
+                background-color:map-get($colors, terciario);
+                margin: 1rem;
+                border-radius: 8px;
+            }
+        }
+    }
+} 
+
+.serviciosDestacado1{
+    background-image: url(../assets/img/serv_dest_1.png);
+}
+.serviciosDestacado2{
+    background-image: url(../assets/img/serv_dest_2.png);
+}
+.serviciosDestacado3{
+    background-image: url(../assets/img/serv_des_3.png);
+}
+
+
+.ultimosProyectos{
+    display: flex;
+    flex-direction: column;
+    @include fondo-completo('../assets/img/ultimos_proyectos.png');
+    padding: 2rem;
+    text-align: center;
+    color: map-get($colors, blanco);
+    gap: 3rem;
+    h2{
+        font-size: 24px;
+        line-height:33px ;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        gap: 3rem;
+        div{
+            display:flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        img{
+            width: 100%;
+            max-width: 18rem;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+footer{
+    background-color:map-get($colors, secundario );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    color: map-get($colors, blanco );
+    gap: 1.5rem;
+    img{
+        height: auto;
+    }
+}

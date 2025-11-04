@@ -1,0 +1,14 @@
+/* utilities */
+@import "utilities/maps";
+@import "utilities/mixins";
+/* base */
+@import "base/reset";
+@import "./base/tipografia";
+/* layouts */
+@import "layouts/hero";
+@import "layouts/navbar";
+@import "layouts/banner";
+@import "layouts/main-index";
+@import "layouts/footer";
+/* components */
+@import "./components/botones"

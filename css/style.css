@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* utilities */
+/* base */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h3, p {
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.pSmall {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* layouts */
+.hero {
+  position: relative;
+  background-image: url("../assets/img/background_hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 11.75rem; /* alto fijo del hero */
+  display: flex; /* para alinear logo y texto */
+  align-items: center;
+}
+.hero img {
+  height: auto; /* altura fija del logo */
+  width: auto; /* mantiene proporción */
+  margin-left: 2rem;
+}
+.hero div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero div h1 {
+  margin: 0;
+  font-size: 32px;
+}
+.hero div h3 {
+  margin: 20px 0 0 0;
+}
+
+nav ul {
+  height: auto;
+  list-style: none;
+  background-color: #F9F6F2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 32px;
+}
+nav ul a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  background-color: #D9D9D9;
+  border-radius: 24px;
+  color: #6E6969;
+  padding: 0.625rem 0.625rem;
+  border: #6E6969 1px solid;
+  display: flex; /* el a es en un elemento en linea que no resperta  width y height, debo pasarlo a block */
+  justify-content: center; /* centra el texto horizontal */
+  align-items: center; /* centra el texto vertical */
+  width: 6rem; /* ancho fijo */
+  height: 2rem;
+}
+nav ul a:hover {
+  background-color: #A67B5B; /* cuando pasas el mouse */
+  color: #FFFFFF;
+  transform: scale(1.12);
+}
+
+.bannerDelHome {
+  background-image: url("../assets/img/background_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+.bannerDelHome div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 100%;
+}
+.bannerDelHome div h2 {
+  font-size: 24px;
+  line-height: 33px;
+}
+.bannerDelHome div li {
+  font-size: 22px;
+  line-height: 32px;
+}
+.bannerDelHome img {
+  max-width: 100%;
+  height: auto;
+}
+
+.serviciosDestacados {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem;
+  gap: 2rem;
+  background-color: #F9F6F2;
+}
+.serviciosDestacados h2 {
+  display: flex;
+  background-color: #D9C4B1;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 24px;
+  line-height: 33px;
+}
+.serviciosDestacados div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.serviciosDestacados div article {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  border-radius: 8px;
+  width: 18rem;
+  height: 18rem;
+}
+.serviciosDestacados div article p {
+  padding: 16px;
+  background-color: #D9C4B1;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.serviciosDestacado1 {
+  background-image: url(../assets/img/serv_dest_1.png);
+}
+
+.serviciosDestacado2 {
+  background-image: url(../assets/img/serv_dest_2.png);
+}
+
+.serviciosDestacado3 {
+  background-image: url(../assets/img/serv_des_3.png);
+}
+
+.ultimosProyectos {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/img/ultimos_proyectos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  gap: 3rem;
+}
+.ultimosProyectos h2 {
+  font-size: 24px;
+  line-height: 33px;
+}
+.ultimosProyectos div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.ultimosProyectos div div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ultimosProyectos div img {
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+}
+
+footer {
+  background-color: #A67B5B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5rem 2rem;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 1.5rem;
+}
+footer img {
+  height: auto;
+}
+
+/* components */
+.botonActivo {
+  color: #FFFFFF;
+  background-color: #4B352A;
+}
+
+.botonSolicitarPresupuesto {
+  width: 80%;
+  max-width: 22.375rem;
+  padding: 0.625rem;
+  background-color: #4B352A;
+  color: #FFFFFF;
+  border-radius: 24px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+  border: none;
+  margin: 2rem;
+}
+.botonSolicitarPresupuesto:hover {
+  background-color: #A67B5B; /* cuando pasas el mouse */
+  color: #FFFFFF;
+  border: #6E6969 1px solid;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
