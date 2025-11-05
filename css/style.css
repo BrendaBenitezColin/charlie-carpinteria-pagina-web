@@ -36,7 +36,8 @@ p {
   line-height: 25px;
 }
 
-.pSmall {
+.pSmall, .contactos form div label {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -81,6 +82,7 @@ nav ul {
   list-style: none;
   background-color: #F9F6F2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
@@ -243,6 +245,221 @@ footer img {
   height: auto;
 }
 
+.servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  gap: 2rem;
+  background-color: #F9F6F2;
+}
+.servicios h1 {
+  background-color: #A67B5B;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #000000;
+}
+.servicios h3 {
+  text-align: center;
+}
+.servicios section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  color: #FFFFFF;
+}
+.servicios section article {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 71.375rem);
+  height: 19.3125rem;
+  background-color: #4B352A;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.servicios section article div {
+  display: flex;
+  padding: 0px 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.servicios section article img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  gap: 2rem;
+  background-color: #F9F6F2;
+}
+.servicios h1 {
+  background-color: #A67B5B;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #000000;
+}
+.servicios h3 {
+  text-align: center;
+}
+.servicios section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  color: #FFFFFF;
+}
+.servicios section article {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 71.375rem);
+  height: 19.3125rem;
+  background-color: #4B352A;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.servicios section article div {
+  display: flex;
+  padding: 0px 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.servicios section article img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 2rem 2rem;
+  gap: 2rem;
+  background-color: #F9F6F2;
+}
+.galeria h1 {
+  background-color: #A67B5B;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #000000;
+}
+.galeria h3 {
+  text-align: center;
+}
+.galeria div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.galeria section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.galeria section img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.galeria section img:hover {
+  transform: scale(1.05);
+}
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 2rem 2rem;
+  gap: 2rem;
+  background-color: #F9F6F2;
+}
+.contactos h1 {
+  background-color: #A67B5B;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #000000;
+}
+.contactos h3 {
+  text-align: center;
+}
+.contactos form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.contactos form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contactos form div label {
+  color: #000000;
+}
+.contactos form div input, .contactos form div textarea {
+  width: 100%;
+  border: 1px solid #6E6969;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.contactos form div input::placeholder, .contactos form div textarea::placeholder {
+  color: #6E6969;
+  font-size: 18px;
+  line-height: 25px;
+}
+.contactos form div input:focus, .contactos form div textarea:focus {
+  outline: none;
+  border-color: #4B352A;
+}
+.contactos form div input {
+  height: 42px;
+}
+.contactos form div textarea {
+  height: 139px;
+  resize: none;
+}
+.contactos form button {
+  grid-column: 1/-1; /* hace que el botón ocupe todo el ancho del grid */
+  justify-self: center; /* lo centra horizontalmente */
+}
+
 /* components */
 .botonActivo {
   color: #FFFFFF;
@@ -250,7 +467,7 @@ footer img {
 }
 
 .botonSolicitarPresupuesto {
-  width: 80%;
+  width: 100%;
   max-width: 22.375rem;
   padding: 0.625rem;
   background-color: #4B352A;
@@ -270,6 +487,35 @@ footer img {
   color: #FFFFFF;
   border: #6E6969 1px solid;
   transform: scale(1.1);
+}
+
+.filtrosGaleria {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  color: #4B352A;
+  border: #4B352A 1px solid;
+  display: flex;
+  flex-wrap: wrap; /* el a es en un elemento en linea que no resperta  width y height, debo pasarlo a block */
+  justify-content: center; /* centra el texto horizontal */
+  align-items: center; /* centra el texto vertical */
+  width: 5rem; /* ancho fijo */
+  height: 2rem;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.filtrosGaleria:hover {
+  background-color: #D9C4B1; /* cuando pasas el mouse */
+  color: #000000;
+  border: #6E6969 1px solid;
+  transform: scale(1.1);
+}
+
+.filtroActivo {
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #A67B5B;
 }
 
 /*# sourceMappingURL=style.css.map */

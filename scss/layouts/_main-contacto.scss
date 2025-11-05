@@ -1,0 +1,62 @@
+.contactos{
+    display:flex;
+    flex-direction: column;
+    padding: 0rem 2rem 2rem 2rem ;
+    gap: 2rem;
+    background-color:map-get($colors, fondo ) ;
+    h1{
+        @include titulo-h1;
+    }
+    h3{
+        text-align: center;
+    }
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 3rem;
+        max-width: 1150px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            label{
+                @extend .pSmall;
+                color: map-get($colors, negro);
+            }
+            input, textarea{
+                width: 100%;
+                border: 1px solid map-get($colors, gris-1);
+                background-color: map-get($colors, blanco);
+                color: map-get($colors, negro);
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                line-height: 25px;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                &::placeholder {
+                    color: map-get($colors, gris-1);
+                    font-size: 18px;
+                    line-height: 25px;
+                    }
+                &:focus {
+                outline: none;
+                border-color: map-get($colors, primario);
+                }
+            }
+            input {
+                height: 42px;
+            }
+            textarea {
+                height: 139px;
+                resize: none;
+            }
+        }
+        button{
+            grid-column: 1 / -1; /* hace que el botón ocupe todo el ancho del grid */
+            justify-self: center; /* lo centra horizontalmente */
+            }
+    }
+}

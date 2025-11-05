@@ -4,7 +4,7 @@
 }
 
 .botonSolicitarPresupuesto{
-    width: 80%;
+    width: 100%;
     max-width: 22.375rem;
     padding: .625rem;
     background-color: map-get($colors, primario );
@@ -24,4 +24,33 @@
         border:map-get($colors, gris-1) 1px solid;
         transform:scale(1.1) ;
     }
+}
+
+.filtrosGaleria{
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    background-color: map-get($colors, blanco);
+    border-radius: 24px;
+    color:map-get($colors, primario);
+    border:map-get($colors, primario) 1px solid;
+    display: flex; 
+    flex-wrap: wrap;              /* el a es en un elemento en linea que no resperta  width y height, debo pasarlo a block */
+    justify-content: center;      /* centra el texto horizontal */
+    align-items: center;          /* centra el texto vertical */
+    width: 5rem;   /* ancho fijo */
+    height: 2rem;
+    padding: 4px 6px;
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colors, terciario); /* cuando pasas el mouse */
+        color: map-get($colors, negro );
+        border:map-get($colors, gris-1) 1px solid;
+        transform:scale(1.1) ;
+    }
+}
+
+.filtroActivo{
+    color:map-get($colors, negro );
+    border:1px solid map-get($colors, negro);
+    background-color: map-get($colors, secundario );
 }
