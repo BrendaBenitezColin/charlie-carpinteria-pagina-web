@@ -2,10 +2,10 @@
     /* FUENTES */
     h1, h2 {
     font-family: "Playfair Display", serif;
-    letter-spacing: 0.3px; /* un poco menos que en escritorio */
+    letter-spacing: 0.3px; 
     }
     h1 {
-        font-size: 20px;       /* más pequeño para caber en pantallas pequeñas */
+        font-size: 20px;      
         line-height: 24px;
     }
     h2 {
@@ -30,8 +30,8 @@
     /* hero */
     .hero{
         img{
-            max-width: 130px;   /* más pequeño que antes */
-            width: auto;        /* mantiene proporción */
+            max-width: 130px;  
+            width: auto;        
             height: auto;
             display: block;     
             margin: 0 0 1.5rem 0;
@@ -49,12 +49,12 @@
 nav ul {
     width: 100%;
     margin: 0;
-    padding: 16px 16px;  // padding arriba/abajo y lateral
+    padding: 16px 16px; 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: map-get($colors, fondo); // tu fondo original
+    background-color: map-get($colors, fondo); 
 
     li {
         flex: 1;
@@ -86,32 +86,32 @@ nav ul {
     }
     /* banner */
 .bannerDelHome {
-    padding: 1rem;             // padding general reducido
-    flex-direction: column;     // apilar elementos
-    gap: .5rem;                // menos espacio entre bloques
+    padding: 1rem;             
+    flex-direction: column;     
+    gap: .5rem;               
 
     div {
         align-items: center;
-      gap: 1rem;             // menos espacio entre h2 y ul
+        gap: 1rem;          
 
         h2 {
-        font-size: 18px;       // más pequeño
-        line-height: 24px; // margen inferior reducido
+        font-size: 18px;       
+        line-height: 24px; 
         text-align: center;
         }
 
         ul li {
-        font-size: 14px;       // más pequeño
+        font-size: 14px;    
         line-height: 18px;
         text-align: center;
-        margin-bottom: .0625rem; // menos espacio entre elementos de la lista
+        margin-bottom: .0625rem; 
         }
     }
 
     img {
-        max-width: 80%;           // tamaño de la imagen reducido
+        max-width: 80%;          
         height: auto;
-        margin: 0 auto;           // centrar       // espacio entre la lista y la imagen
+        margin: 0 auto;         
     }
     }
 /* main index */
@@ -122,33 +122,33 @@ nav ul {
 
   /* h2 de Últimos Proyectos */
 .ultimosProyectos {
-    padding: 2rem;        // reduce padding general
-    gap: 2rem;            // espacio entre h2 y div principal
+    padding: 2rem;        
+    gap: 2rem;           
 
     h2 {
-        font-size: 20px;    // h2 más pequeño para móvil
+        font-size: 20px;   
         line-height: 24px;
-        text-align: center; // centra el título
+        text-align: center;
     }
 
     div {
         display: flex;
-        flex-direction: column; // apilar los proyectos
-        align-items: center;    // centrar horizontalmente
-        text-align: center;     // centrar texto
-        gap: 1.5rem;            // espacio entre proyectos
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;     
+        gap: 1.5rem;        
 
         div {
             display: flex;
             flex-direction: column;
-            align-items: center;  // centra imagen y texto interno
-            text-align: center;   // centra el texto de cada proyecto
-            gap: 1rem;            // espacio entre imagen y texto
+            align-items: center; 
+            text-align: center;   
+            gap: 1rem;            
         }
 
         img {
         width: 100%;
-        max-width: 16rem;     // tamaño reducido de la imagen
+        max-width: 16rem;     
         height: auto;
         }
     }
@@ -160,8 +160,8 @@ nav ul {
     }
 .galeria {
     div {
-        justify-content: center; // centra los filtros
-        gap: 0.8rem; // opcional: reduce un poco el espacio entre ellos
+        justify-content: center; 
+        gap: 0.8rem; 
         button{
             font-size: 12px;
             width: 5rem;

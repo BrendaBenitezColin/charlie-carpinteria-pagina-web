@@ -25,11 +25,11 @@
     }
     /* main-contactos */
 .contactos form {
-    grid-template-columns: 1fr; /* una sola columna */
-    gap: 1.5rem; /* ajusta la separación entre campos */
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
     }
 .contactos form button {
-    grid-column: 1; /* asegura que el botón quede alineado con la única columna */
+    grid-column: 1; 
     justify-self: center;
     }
 }

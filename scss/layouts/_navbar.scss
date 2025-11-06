@@ -18,9 +18,9 @@ nav ul{
         color:map-get($colors, gris-1);
         padding: .625rem .625rem;
         border:map-get($colors, gris-1) 1px solid;
-        display: flex;                /* el a es en un elemento en linea que no resperta  width y height, debo pasarlo a block */
-        justify-content: center;      /* centra el texto horizontal */
-        align-items: center;          /* centra el texto vertical */
+        display: flex;
+        justify-content: center;      
+        align-items: center;        
         width: 6rem;   /* ancho fijo */
         height: 2rem;
         &:hover{

@@ -70,13 +70,13 @@
     }
     /* nav */
     nav ul {
-        flex-wrap: wrap;         /* permite que los elementos bajen de fila */
-        justify-content: space-evenly; /* centra los elementos en cada fila */
-        gap: 16px;               /* espacio entre los botones */
+        flex-wrap: wrap;         
+        justify-content: space-evenly; 
+        gap: 16px;             
     }
 
     nav ul a {
-        width: 6rem;             /* ancho fijo de los botones */
-        height: 2rem;            /* alto fijo */
+        width: 6rem;            
+        height: 2rem;        
     }
 }

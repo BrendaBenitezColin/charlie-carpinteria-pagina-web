@@ -34,15 +34,15 @@
     color:map-get($colors, primario);
     border:map-get($colors, primario) 1px solid;
     display: flex; 
-    flex-wrap: wrap;              /* el a es en un elemento en linea que no resperta  width y height, debo pasarlo a block */
-    justify-content: center;      /* centra el texto horizontal */
-    align-items: center;          /* centra el texto vertical */
-    width: 5rem;   /* ancho fijo */
+    flex-wrap: wrap;
+    justify-content: center;      
+    align-items: center;          
+    width: 5rem;  
     height: 2rem;
     padding: 4px 6px;
     cursor: pointer;
     &:hover{
-        background-color: map-get($colors, terciario); /* cuando pasas el mouse */
+        background-color: map-get($colors, terciario); 
         color: map-get($colors, negro );
         border:map-get($colors, gris-1) 1px solid;
         transform:scale(1.1) ;

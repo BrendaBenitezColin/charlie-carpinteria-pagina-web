@@ -24,7 +24,7 @@ nav ul{
 }
 /* hero */
 .hero {
-    flex-direction: row-reverse; /* logo a la derecha, texto a la izquierda */
+    flex-direction: row-reverse; 
     justify-content: space-between;
     align-items: center;
     div {
@@ -32,8 +32,8 @@ nav ul{
         transform: none;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* centra verticalmente el texto dentro del div */
-        align-items: flex-start; /* mantiene el texto hacia la izquierda */
+        justify-content: center;
+        align-items: flex-start;
         text-align: center;
         margin-left: 32px;
         h3{

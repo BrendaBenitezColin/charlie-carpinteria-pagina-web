@@ -2,12 +2,12 @@
     position: relative;
     @include fondo-completo('../assets/img/background_hero.png');
     color: map-get($colors, blanco);
-    height: 11.75rem;            /* alto fijo del hero */
-    display: flex;             /* para alinear logo y texto */
+    height: 11.75rem;            
+    display: flex;             
     align-items: center;
     img{
-         height: auto;            /* altura fija del logo */
-        width: auto;              /* mantiene proporción */
+        height: auto;            
+        width: auto;             
         margin-left: 2rem;
     }
     div{
