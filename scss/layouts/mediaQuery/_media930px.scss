@@ -1,0 +1,49 @@
+@media (max-width: 930px) {
+    /* media-index */
+.serviciosDestacados div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:last baseline;
+    gap: 2rem;
+    article{
+        width: 15rem;
+        height: 15rem;
+        p{
+            padding: 8px;
+        }
+    }
+    }
+
+.ultimosProyectos div div {
+    width: 15rem;
+    }
+
+/* media navbar */
+nav ul{
+    justify-content: space-between;
+}
+/* hero */
+.hero {
+    flex-direction: row-reverse; /* logo a la derecha, texto a la izquierda */
+    justify-content: space-between;
+    align-items: center;
+    div {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centra verticalmente el texto dentro del div */
+        align-items: flex-start; /* mantiene el texto hacia la izquierda */
+        text-align: center;
+        margin-left: 32px;
+        h3{
+            max-width: 400px; 
+            line-height: 1.4;
+        }
+    }
+    img {
+        margin-left: 0;
+        margin-right: 32px;
+    }
+    }
+}

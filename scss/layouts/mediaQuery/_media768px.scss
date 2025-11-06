@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    /* main-servicios */
+.servicios section article {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+    img {
+        width: 100%;
+        max-width: 400px; /* evita que se estire demasiado */
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    div {
+        padding: 0 1rem;
+        align-items: center;
+        gap: 1rem;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    }
+    /* main-contactos */
+.contactos form {
+    grid-template-columns: 1fr; /* una sola columna */
+    gap: 1.5rem; /* ajusta la separación entre campos */
+    }
+.contactos form button {
+    grid-column: 1; /* asegura que el botón quede alineado con la única columna */
+    justify-self: center;
+    }
+}

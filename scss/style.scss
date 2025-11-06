@@ -14,5 +14,10 @@
 @import "layouts/main-servicios";
 @import "layouts/main-galeria";
 @import "layouts/main-contacto";
+@import "layouts/mediaQuery/media1023px";
+@import "layouts/mediaQuery/media930px";
+@import "layouts/mediaQuery/media880px";
+@import "layouts/mediaQuery/media425px";
+@import "layouts/mediaQuery/media768px";
 /* components */
-@import "./components/botones"
+@import "./components/botones";

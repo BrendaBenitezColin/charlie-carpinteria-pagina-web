@@ -34,7 +34,7 @@
             height: 18rem;
             p{
                 padding: 16px;
-                background-color:map-get($colors, terciario);
+                background-color: rgba(map-get($colors, terciario), 0.6);
                 margin: 1rem;
                 border-radius: 8px;
             }
@@ -68,8 +68,8 @@
     div{
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
-        align-items: center;
+        justify-content:sp;
+        align-items: flex-start;
         gap: 3rem;
         div{
             display:flex;

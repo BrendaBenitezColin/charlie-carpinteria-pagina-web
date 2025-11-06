@@ -10,15 +10,16 @@
 
 h1, h2 {
   font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 33px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 42px;
 }
 
@@ -71,7 +72,7 @@ p {
 }
 .hero div h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
 }
 .hero div h3 {
   margin: 20px 0 0 0;
@@ -129,13 +130,14 @@ nav ul a:hover {
   align-items: center;
   max-width: 100%;
 }
+.bannerDelHome div ul li {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Lato", sans-serif;
+}
 .bannerDelHome div h2 {
   font-size: 24px;
   line-height: 33px;
-}
-.bannerDelHome div li {
-  font-size: 22px;
-  line-height: 32px;
 }
 .bannerDelHome img {
   max-width: 100%;
@@ -180,7 +182,7 @@ nav ul a:hover {
 }
 .serviciosDestacados div article p {
   padding: 16px;
-  background-color: #D9C4B1;
+  background-color: rgba(217, 196, 177, 0.6);
   margin: 1rem;
   border-radius: 8px;
 }
@@ -216,8 +218,8 @@ nav ul a:hover {
 .ultimosProyectos div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: sp;
+  align-items: flex-start;
   gap: 3rem;
 }
 .ultimosProyectos div div {
@@ -287,8 +289,11 @@ footer img {
   justify-content: center;
   gap: 1.5rem;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+}
+.servicios section article div li {
+  font-size: 16px;
   line-height: 25px;
+  margin-bottom: 1rem;
 }
 .servicios section article img {
   width: 45%;
@@ -341,8 +346,11 @@ footer img {
   justify-content: center;
   gap: 1.5rem;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+}
+.servicios section article div li {
+  font-size: 16px;
   line-height: 25px;
+  margin-bottom: 1rem;
 }
 .servicios section article img {
   width: 45%;
@@ -460,6 +468,332 @@ footer img {
   justify-self: center; /* lo centra horizontalmente */
 }
 
+/* main-index */
+@media (max-width: 1023px) {
+  .serviciosDestacados div article {
+    width: 16rem;
+    height: 16rem;
+  }
+  .bannerDelHome img {
+    max-width: 350px; /* o el valor que se vea bien, puedes ajustar */
+    height: auto;
+  }
+}
+@media (max-width: 1023px) {
+  .ultimosProyectos div img {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+}
+@media (max-width: 930px) {
+  /* media-index */
+  .serviciosDestacados div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+    gap: 2rem;
+  }
+  .serviciosDestacados div article {
+    width: 15rem;
+    height: 15rem;
+  }
+  .serviciosDestacados div article p {
+    padding: 8px;
+  }
+  .ultimosProyectos div div {
+    width: 15rem;
+  }
+  /* media navbar */
+  nav ul {
+    justify-content: space-between;
+  }
+  /* hero */
+  .hero {
+    flex-direction: row-reverse; /* logo a la derecha, texto a la izquierda */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero div {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente el texto dentro del div */
+    align-items: flex-start; /* mantiene el texto hacia la izquierda */
+    text-align: center;
+    margin-left: 32px;
+  }
+  .hero div h3 {
+    max-width: 400px;
+    line-height: 1.4;
+  }
+  .hero img {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+}
+@media (max-width: 880px) {
+  /* main-index */
+  .serviciosDestacados div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .serviciosDestacados div article {
+    width: 16rem;
+    height: 16rem;
+  }
+  .serviciosDestacados div article p {
+    padding: 12px;
+  }
+  .ultimosProyectos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .ultimosProyectos div div {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ultimosProyectos div img {
+    width: 100%;
+    height: auto;
+  }
+  /* hero */
+  .hero {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .hero img {
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    margin: 0 0 2rem 0;
+    display: block;
+  }
+  .hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .hero div h1, .hero div h3 {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .hero div h3 {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+  /* nav */
+  nav ul {
+    flex-wrap: wrap; /* permite que los elementos bajen de fila */
+    justify-content: space-evenly; /* centra los elementos en cada fila */
+    gap: 16px; /* espacio entre los botones */
+  }
+  nav ul a {
+    width: 6rem; /* ancho fijo de los botones */
+    height: 2rem; /* alto fijo */
+  }
+}
+@media (max-width: 425px) {
+  /* FUENTES */
+  h1, h2 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.3px; /* un poco menos que en escritorio */
+  }
+  h1 {
+    font-size: 20px; /* más pequeño para caber en pantallas pequeñas */
+    line-height: 24px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  h3, p {
+    font-family: "Lato", sans-serif;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pSmall, .contactos form div label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /* hero */
+  .hero img {
+    max-width: 130px; /* más pequeño que antes */
+    width: auto; /* mantiene proporción */
+    height: auto;
+    display: block;
+    margin: 0 0 1.5rem 0;
+  }
+  .hero div h1 {
+    font-size: 22px;
+  }
+  .hero div h3 {
+    font-size: 18px;
+  }
+  /* navbar */
+  nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 16px 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F6F2;
+  }
+  nav ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul a {
+    display: block;
+    max-width: 70px;
+    width: 100%;
+    height: 2rem;
+    padding: 0.4rem 0;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #6E6969;
+    background-color: #D9D9D9;
+    border: 1px solid #6E6969;
+    border-radius: 24px;
+  }
+  nav ul a:hover {
+    background-color: #A67B5B;
+    color: #FFFFFF;
+    transform: scale(1.12);
+  }
+  /* banner */
+  .bannerDelHome {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .bannerDelHome div {
+    align-items: center;
+    gap: 1rem;
+  }
+  .bannerDelHome div h2 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .bannerDelHome div ul li {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 0.0625rem;
+  }
+  .bannerDelHome img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* main index */
+  .serviciosDestacados h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* h2 de Últimos Proyectos */
+  .ultimosProyectos {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .ultimosProyectos h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .ultimosProyectos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .ultimosProyectos div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .ultimosProyectos div img {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+  /* main-servicios */
+  .servicios section article div li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .galeria div {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  .galeria div button {
+    font-size: 12px;
+    width: 5rem;
+    height: 1.6rem;
+    padding: 2px 2px;
+  }
+}
+@media (max-width: 768px) {
+  /* main-servicios */
+  .servicios section article {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .servicios section article img {
+    width: 100%;
+    max-width: 400px; /* evita que se estire demasiado */
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .servicios section article div {
+    padding: 0 1rem;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* main-contactos */
+  .contactos form {
+    grid-template-columns: 1fr; /* una sola columna */
+    gap: 1.5rem; /* ajusta la separación entre campos */
+  }
+  .contactos form button {
+    grid-column: 1; /* asegura que el botón quede alineado con la única columna */
+    justify-self: center;
+  }
+}
 /* components */
 .botonActivo {
   color: #FFFFFF;
